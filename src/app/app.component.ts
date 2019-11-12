@@ -7,12 +7,13 @@ import { User } from './address-card/user.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'second-project';
+  //title = 'second-project';
   user: User;
+  
 
   constructor(){
     this.user = new User();
-    this.user.name = "Foo Bar";
+    this.user.name = "Steve Bar";
     this.user.designation = "Software Engineer";
     this.user.address = "1000 Street City State";
     this.user.phone = [

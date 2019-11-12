@@ -10,9 +10,13 @@ export class AddressCardComponent implements OnInit {
 
   
   @Input("user") user: User;///input variable. "name" in parenthesis needs to be same name as app.component.html
-  
+  isCollapsed : boolean = true;
   constructor() {
     
+   }
+
+  toggleCollapse(){
+     this.isCollapsed = !this.isCollapsed;//easy way to change boolean true/false
    }
 
   ngOnInit() {
