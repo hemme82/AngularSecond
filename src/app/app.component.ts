@@ -9,6 +9,7 @@ import { User } from './address-card/user.model';
 export class AppComponent {
   //title = 'second-project';
   user: User;
+  inputText: string = "initial Value";
   
 
   constructor(){
